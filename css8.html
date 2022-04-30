@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02/10 연습장</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0;
+    }
+
+    body {
+        margin: 40px 60px;
+    }
+
+    header h1.rest {
+        border: 1px solid #e8bd3c;
+        background-color: #e8bd3c;
+        width: 60%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 2.3em;
+        text-align: center;
+        color: white;
+        font-family: "맑은 고딕", 돋움, Arial;
+    }
+
+    h2 .intro {
+        margin-top: 50px;
+        font-size: 2em;
+    }
+
+    .bookcover {
+        float: left;
+        margin: 30px 30px 0 20px;
+        position: relative;
+        top: -10px;
+        box-shadow: -5px 10px 10px 2px #666;
+    }
+
+    dl {
+        margin-top: 50px;
+        line-height: 200%;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+
+    dt {
+        display: inline;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.5em;
+        background: #fdf1cd;
+    }
+
+    body section dt:before {
+        content: "#";
+    }
+
+    dd {
+        font-size: 1.3em;
+        ;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    h1.others {
+        font-size: 2em;
+        color: aliceblue;
+        background: rgb(236, 191, 255);
+        /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, rgba(236, 191, 255, 1) 0%, rgba(255, 255, 91, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(236, 191, 255, 1) 0%, rgba(255, 255, 91, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, rgba(236, 191, 255, 1) 0%, rgba(255, 255, 91, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecbfff', endColorstr='#ffff5b', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        ;
+        padding: 5px;
+        width: 330px;
+        text-align: center;
+        margin: 120px auto;
+        border-radius: 10px;
+        box-shadow: 5px 10px 110px yellow
+    }
+
+    section .subbook {
+        margin-top: 100px;
+        letter-spacing: 1px;
+        line-height: 150%;
+    }
+
+    h2:before {
+        content: open-quote;
+    }
+
+    h2:after {
+        content: close-quote;
+    }
+
+    h2.subintro {
+        margin-top: 20px;
+        font-size: 1.4em;
+        letter-spacing: -2px;
+        text-align: right;
+        font-family: 굴림, "Times New Roman", serif;
+        text-shadow: -1px 0px 15px yellow;
+    }
+
+    h3 {
+        margin-top: 30px;
+        text-align: right;
+        font-size: .9em;
+        font-family: "맑은 고딕", 돋움, sans-serif;
+    }
+
+
+    div {
+        border: 1px solid #666;
+        width: 420px;
+        height: 200px;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    .book1 {
+        background-image: url(images/subbook1.jpg);
+        background-size: 170px;
+        background-repeat: no-repeat;
+        float: left;
+    }
+
+    .book2 {
+        background-image: url(images/subbook2.jpg);
+        background-size: 151px;
+        background-repeat: no-repeat;
+        float: left;
+    }
+
+    .book3 {
+        background-image: url(images/subbook3.jpg);
+        background-size: 172px;
+        background-repeat: no-repeat;
+        float: left;
+        clear: left;
+    }
+
+    .book4 {
+        background-image: url(images/subbook4.jpg);
+        background-size: 173px;
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    body section div p.next1 {
+        position: relative;
+        left: 380px;
+        top: 70px;
+    }
+
+    body section div p.next2 {
+        position: relative;
+        left: 380px;
+        top: 95px;
+    }
+
+    p a:link {
+        color: salmon;
+        font-weight: bolder;
+        background: azure;
+    }
+
+    p a:hover {
+        color: azure;
+        font-weight: bolder;
+        background: salmon;
+    }
+
+    p a:visited {
+        color: black;
+        text-decoration: line-through;
+    }
+
+    p a:active {
+        color: azure;
+        font-weight: bold;
+        background: salmon;
+        border-radius: 5px;
+        box-shadow: 0px 7px 5px #666;
+    }
+</style>
+
+<body>
+    <header>
+        <h1 class="rest">
+            30년만의 휴식
+        </h1>
+    </header>
+    <section>
+        <figure>
+            <img src="images/bookcover.jpg" alt="책표지" width="200px" class="bookcover">
+        </figure>
+        <h2 class="intro">
+            마음을 들여다보고 우리 자신을 되돌아보게 하는 자기계발서!
+        </h2>
+        <dl>
+            <dt>
+                성공했지만 성공하지 못한 '휴'이야기
+            </dt>
+            <dd>
+                우리들 대부분은 우리 안에 성숙한 관계를 방해하는 장애물들을 갖고 있다. 정신분석에서는 그 장애물을 '유년기의 상처' 혹은 '심리적 갈등', '마음속의 아이'라고 한다.
+            </dd>
+            <dt>
+                우리 안에도 어린 '휴'가 있다
+            </dt>
+            <dd>
+                우리 안에는 과거의 경험이 만들어 놓은 모순된 감정들과 유아적인 감정들이 겹겹이 쌓여 있다. 이해할 수 없는 분노나 열등감 같은 유치한 감정들이다.
+                실제 현실이 아닌 타인의 눈에 보이지 않는 심리적 현실일 뿐이지만 대인관계나 정신세계에 구체적인 영향력을 행사한다.
+            </dd>
+            <dt>
+                세상의 '휴'들에게
+            </dt>
+            <dd>
+                모든 인간에게는 나름대로의 기질과 성격이 있다. 인간의 성격은 타고나는 것일까, 아니면 후천적으로 형성되는 것일까? 대부분의 학자들이 후천적이라는 데 동의한다.
+            </dd>
+        </dl>
+    </section>
+
+    <header>
+        <h1 class="others">이무석 저자의 다른 책</h1>
+    </header>
+    <section class="subbook">
+        <div class="book1">
+            <h2 class="subintro">누구의 인정도 아닌</h2>
+            <h3>타인의 인정으로부터<br />자유로워지는 연습</h3>
+            <p class="next1"><a href="https://book.naver.com/bookdb/book_detail.naver?bid=12443891" target="_blank"
+                    title="네이버 책 페이지로 이동합니다.">&gt;&gt;GO</a></p>
+        </div>
+        <div class="book2">
+            <h2 class="subintro">성격 아는 만큼 자유로워진다</h2>
+            <h3>성격을 알면 사람이 보인다</h3>
+            <p class="next2"><a href="https://book.naver.com/bookdb/book_detail.naver?bid=7467657" target="_blank"
+                    title="네이버 책 페이지로 이동합니다.">&gt;&gt;GO</a></p>
+        </div>
+        <div class="book3">
+            <h2 class="subintro">내 아이의 자존감</h2>
+            <h3>스펙보다 중요한</h3>
+            <p class="next2"><a href="https://book.naver.com/bookdb/book_detail.naver?bid=7201213" target="_blank"
+                    title="네이버 책 페이지로 이동합니다.">&gt;&gt;GO</a></p>
+        </div>
+        <div class="book4">
+            <h2 class="subintro">이무석의 마음</h2>
+            <h3>삶을 이끄는 것은<br />현실이 아니라 마음이다</h3>
+            <p class="next1"><a href="https://book.naver.com/bookdb/price.naver?bid=6639726" target="_blank"
+                    title="네이버 책 페이지로 이동합니다.">&gt;&gt;GO</a></p>
+        </div>
+    </section>
+
+</body>
+
+</html>

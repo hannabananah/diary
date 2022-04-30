@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02/13 연습장</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+        background-color: white;
+    }
+
+    @media screen and (max-width:1280px){
+        body{background: #fffce0;}
+    }
+    @media screen and (max-width:1024px){
+        body{background: #d2f5f2;}
+    }
+    @media screen and (max-width:960px){
+        body{background: rgb(255, 152, 152);}
+    }
+    @media screen and (max-width:720px){
+        body{background: #c7b8ff;}
+    }
+
+    dl,
+    dt,
+    dd,
+    ul,
+    li,
+    a {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        font-family: '맑은 고딕', 돋움, sans-serif;
+        height: 80px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    h1 {
+        width: 100%;
+        color: aliceblue;
+        text-shadow: 0px 0px 10px rgb(3, 121, 160);
+        margin: 30px 0;
+    }
+
+    h2 {
+        color: antiquewhite;
+        background-color: deepskyblue;
+        border-radius: 5px;
+        width: 25%;
+        margin: 30px auto;
+    }
+
+    span.blank {
+        background-color: deepskyblue;
+    }
+
+    span.flag1 {
+        display: block;
+        position: relative;
+        background-image: url(images/ch_flag.jpg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        width: 100px;
+        height: 68px;
+        top:185px;
+        left: -32px;
+        transform: rotate(-30deg);
+        z-index: 6;
+    }
+    span.flag2 {
+        display: block;
+        position: relative;
+        background-image: url(images/hu_flag.jpg);
+        background-repeat: no-repeat;
+        background-size: 130px;
+        width: 135px;
+        height: 65px;
+        top:110px;
+        left: 360px;
+        z-index: 6;
+    }
+    span.flag3 {
+        display: block;
+        position: relative;
+        background-image: url(images/au_flag.jpg);
+        background-repeat: no-repeat;
+        background-size: 120px;
+        width: 120px;
+        height: 80px;
+        top:35px;
+        left: 1040px;
+        transform: rotate(15deg);
+        z-index: 6;
+    }
+
+    section {
+        margin-top: 80px;
+    }
+
+    dt,
+    dd {
+        display: inline;
+    }
+
+    dt {
+        font-size: 1.7em;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        padding: 10px 5px;
+    }
+
+    #Praha {
+        width: 100px;
+        height: 40px;
+        background-color: rgb(0, 191, 255);
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        overflow: hidden;
+        transition-property: width;
+        transition-duration: 1.5s;
+    }
+
+    #Praha:hover {
+        width: 630px;
+        background: -moz-linear-gradient(left, #00bfff 0%, #b22222 100%);
+        background: -webkit-linear-gradient(left, #00bfff 0%, #b22222 100%);
+        background: linear-gradient(to right, #00bfff 0%, #b22222 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00bfff', endColorstr='#b22222', GradientType=1);
+        color: azure;
+    }
+
+    #Praha dt:hover {
+        text-shadow: 0 0 5px azure;
+    }
+
+    a:link {
+        text-decoration: none;
+        color:azure
+    }
+
+    a:visited {
+        text-decoration: none;
+        color:azure
+    }
+
+    #Budapest {
+        width: 155px;
+        height: 40px;
+        background-color: lawngreen;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        overflow: hidden;
+        transition: step-start 3s, background 2s;
+    }
+
+    #Budapest:hover {
+        width: 390px;
+        background: #7cfc00;
+        background: -moz-linear-gradient(-45deg, #7cfc00 0%, #8290e0 21%, #a7f9f4 52%, #dc143c 100%);
+        background: -webkit-linear-gradient(-45deg, #7cfc00 0%, #8290e0 21%, #a7f9f4 52%, #dc143c 100%);
+        background: linear-gradient(135deg, #7cfc00 0%, #8290e0 21%, #a7f9f4 52%, #dc143c 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cfc00', endColorstr='#dc143c', GradientType=1);
+        ;
+        color: #222;
+    }
+
+    #Budapest dt:hover {
+        text-shadow: 0 0 5px azure;
+    }
+
+    #Hallstatt {
+        width: 145px;
+        height: 40px;
+        background-color: rgba(245, 87, 118, 0.712);
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        overflow: hidden;
+        transition: width 1s, background 1s;
+    }
+
+    #Hallstatt:hover {
+        width: 405px;
+        background-color: antiquewhite;
+        color: #222;
+    }
+
+    #Hallstatt dt:hover {
+        text-shadow: 0 0 5px #888;
+    }
+
+    nav {
+        width: 1100px;
+        margin: -130px auto 30px;
+    }
+
+    #area {
+        width: 1300px;
+        margin: auto;
+        list-style: none;
+    }
+
+    #area li {
+        float: left;
+        width: 400px;
+        height: 400px;
+        margin-left: 5px;
+    }
+
+    #area li a img {
+        opacity: .6;
+        cursor: pointer;
+    }
+
+    #area li a img:hover {
+        opacity: 1;
+    }
+
+    body nav ul li a span.name {
+        text-align: center;
+        display: block;
+        position: relative;
+        top: -290px;
+        font-size: 20px;
+        background-color: rgb(0, 0, 0, .3);
+        color: pink;
+        width: 300px;
+        visibility: hidden;
+    }
+
+    #area li a img:hover+.name {
+        visibility: visible;
+    }
+
+    #area li a#pr img {
+        transition: all 1s;
+    }
+
+    #area li a#bu img {
+        transition: all 300ms;
+        position: relative;
+        z-index: 2;
+        width: 300px;
+        height: 300px;
+    }
+
+    #area li:hover a#bu img {
+        width: 500px;
+        height: 500px;
+        box-shadow: 0 15px 20px 10px #999;
+        z-index: 3;
+    }
+
+    #area li:hover a#bu .name {
+        position: relative;
+        top: -480px;
+        width: 500px;
+        z-index: 3;
+    }
+
+    #area li:hover a#ha img {
+        box-shadow: 0 0 70px forestgreen;
+    }
+</style>
+
+<body>
+    <header>
+        <h1><span class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+            class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;유럽 여행지&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span>&nbsp;<span class="blank">&nbsp;</span>&nbsp;<span
+                class="blank">&nbsp;</span></h1>
+        <h2>체코, 헝가리, 오스트리아 관광지</h2>
+    </header>
+    <section>
+        <div id="Praha">
+            <dl>
+                <a href="#pr">
+                    <dt>Praha</dt>
+                </a>
+                <dd>당혹스러울 정도의 촌스러움과 한없는 우아함이 공존하는 체코의 도시</dd>
+            </dl>
+        </div>
+        <div id="Budapest">
+            <dl>
+                <a href="#bu">
+                    <dt>Budapest</dt>
+                </a>
+                <dd>헝가리의 야경과 온전의 도시</dd>
+            </dl>
+        </div>
+        <div id="Hallstatt">
+            <dl>
+                <a href="#ha">
+                    <dt>Hallstatt</dt>
+                </a>
+                <dd>오스트리아의 동화같은 호수 마을</dd>
+            </dl>
+    </section>
+    <nav>
+        <span class="flag1"></span><span class="flag2"></span><span class="flag3"></span>
+        <ul id="area">
+            <li href="#">
+                <a id="pr">
+                    <img src="images/praha.jpg" alt="프라하" width="300" height="300" />
+                    <span class="name">
+                        <strong>Praha</strong>
+                    </span>
+                </a>
+            </li>
+            <li href="#">
+                <a id="bu">
+                    <img src="images//budapest.jpg" alt="부다페스트" width="300" height="300" />
+                    <span class="name">
+                        <strong>Budapest</strong>
+                    </span>
+                </a>
+            </li>
+            <li href="#">
+                <a id="ha">
+                    <img src="images/hallstatt.jpg" alt="할슈타트" width="300" height="300" />
+                    <span class="name">
+                        <strong>Hallstatt</strong>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

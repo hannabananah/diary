@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02/10 일기장 </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body div{
+            width: 500px;
+            height: 400px;
+            margin: 100px;
+        }
+        body div.box1{
+            background: url(images/borderframe.png) no-repeat center ;
+            position: absolute;
+            float: left;
+            border: 3px solid; 
+            border-radius: 10px;
+            box-shadow: 5px 3px 30px 2px;
+        }
+        body div.box2{
+            float: left;
+            margin-left: 800px;
+			border: 50px solid;
+			border-image: url(images/borderframe5.png) 40 repeat;
+        }
+        body div.box3{
+            float: left;
+            clear: left;
+			border: 30px solid;
+			border-image-source: url(images/borderframe2.jpg);
+            border-image-slice: 50;
+            border-image-repeat: round;
+			border-image-outset: 8px 14px 15px 7px;
+        }
+        body div.box4{
+            float: left;
+			border: 50px solid;
+			border-image-source: url(images/borderframe6.png) ;
+            border-image-slice: 10% fill;
+        }
+        body div.box5{
+            float: left;
+			border: 70px solid;
+			border-image-source: url(images/borderframe8.png);
+            border-image-width: 36px 50px;
+            border-image-slice: 5% fill;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+
+</html>

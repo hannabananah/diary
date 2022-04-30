@@ -1,0 +1,18 @@
+a[title$="기능장"]{
+    background-color: powderblue;
+    color: tomato;
+    font-weight: bold;
+}
+a[title^="제과"]{
+    background-color: thistle;
+    color:maroon;
+    font-weight: bold;
+}a[title*="산업기사"]{
+    background-color:rosybrown;
+    color:olivedrab;
+    font-weight: bold;
+}a[title="조주기능사"]{
+    background-color:mistyrose;
+    color:navy;
+    font-weight: bold;
+}

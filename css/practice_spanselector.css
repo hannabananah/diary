@@ -1,0 +1,43 @@
+body{
+    border: 3px solid olive;
+    background-color: rgb(203, 253, 203);
+    padding: 20px;
+    font-family: "맑은 고딕", 돋움, sans-serif;
+    border-radius: 30px;
+    margin: 30px;
+    border-style: double;
+    width: 700px;
+}
+h1  {
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+}
+.name{
+    text-align: right;
+}
+div{
+    border: 1px solid olive;
+    background-color: rgb(225, 252, 225);
+    border-radius: 40px;
+    text-align: center;
+    line-height: 200%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: dotted;
+}
+.mom{
+    font-weight: border;
+    color: slategrey;
+    border-bottom: 1px dashed mediumturquoise;
+}
+.son{
+    color: royalblue;
+    font-weight: lighter;
+}
+.highlight{
+    background-color: mediumseagreen;
+    color: mintcream;
+    font-size: 17px;
+
+}
