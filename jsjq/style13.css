@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow: hidden;
+}
+body {
+  background: #ffffff;
+}
+
+/* mouseCont */
+.mouseCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: colimn;
+  width: 100%;
+  height: 100vh;
+  cursor: none;
+}
+.cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fff;
+  z-index: 000;
+  background-color: rgba(255,255,255,.1);
+  user-select: none;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+/* stage */
+.main_area{
+    position: relative;
+}
+
+/* will-change는 성능때문에 transform 속성이 곧 적용된다고 브라우저에 일종의 고지,
+보통 키프레임이 들어가는 애니메이션이나 3d속성이 들어가는 곳에 사용 */
+.sub_area{
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: perspective(600px);
+    will-change: transform;
+    width: 500px;
+}
+.main_area img{
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+}
+.main_area img.obj1{
+    z-index: 5;
+    width: 40%;
+    bottom: 0%;
+    left: 10%;
+    filter: drop-shadow(16px 0px 20px rgba(113,113,113,.8));
+}
+.main_area img.obj2{
+    z-index: 1;
+    bottom: 0%;
+    left: -10%;
+    filter: drop-shadow(16px 0px 20px rgba(113,113,113,.8));
+}

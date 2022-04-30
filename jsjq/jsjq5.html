@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{width:100px; height:100px; border:1px solid;}
+  </style>
+</head>
+<body>
+    <h1>요소의 인덱스 번호를 제이쿼리로 다뤄보기</h1>
+  <div class="box">box</div>
+  <div class="box">box</div>
+  <div class="box">box</div>
+  <div class="box">box</div>
+  <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+  <script>
+        // eq는 html 요소의 인덱스를 골라 가져오는 것
+      //eq(0)에 .css를 붙이는 것을 메소드 체이닝이라고 함
+      
+/*       var box1=$('.box').eq(0);
+      box1.css('background-color','beige');
+      이것을 jquery 형태로 바꾼 것이 아래의 식
+ */
+      $('.box').eq(0).css('background-color','azure');
+      //'제이쿼리 객체로 만든다.' 라고 말함-->eq 메소드 이용.
+
+    //   mouseover를 하면 해당 박스의 index가 몇 번째인지 알 수 있는 식
+    $('div').mouseover(function(){
+        let idx=$('div').index(this);
+/*         alert(idx)
+    })
+ */
+    // 문제--마우스를 올린 박스만 분홍색으로
+    $('div').eq(idx).css('background-color','pink');
+    })
+    /* 같은 결과를
+    $(this).css('background-color','blue');
+ })
+ 로도 나타낼 수 있음*/
+  </script>
+</body>
+</html>

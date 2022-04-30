@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+    <style>
+        #div1 {
+            background: pink;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 50px;
+        }
+        #div2 {
+            background-color: floralwhite;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 50px;
+            border-radius: 50%;
+        }
+    </style>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            // $('#div1').animate({ top: 200, left: 400 }, 2000,'easeOutBounce').animate({ top: 0, left: 600 }, 2000,'easeOutBounce')
+
+            $("#div1").animate({right:700},2000,'easeInBounce').animate({top:800},2000,'easeInBounce').animate({right:600},2000).animate({right:550},2000);
+            $("#div2").delay(2000).animate({bottom:400},2000,'easeInBounce').animate({left:500},2000,'easeInBounce').animate({bottom:210},2000).animate({left:400},2000);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div1">box</div>
+    <div id="div2">box</div>
+</body>
+
+</html>

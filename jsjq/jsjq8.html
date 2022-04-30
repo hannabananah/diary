@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤시 회전하는 박스</title>
+    <style>
+        .wrap {
+            height: 10000px;
+            position: sticky;
+        }
+
+        .text {
+            display: inline-block;
+            color: white;
+            transform: translate(40px, 40px);
+        }
+
+        .text,
+        .box {
+            margin: 90px 90px 90px 140px;
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            top: 0;
+        }
+
+        .box {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="box"> </div>
+
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
+			$(window).scroll(function() {
+            var wScroll=$(this).scrollTop();
+            console.log(wScroll);
+            $('.box').css({
+                'transform-origin': '50%',
+                'transform': 'rotate('+wScroll/3+'deg)',
+                'top': wScroll/20+'px'
+            });
+        })
+
+
+    </script>
+</body>
+
+</html>

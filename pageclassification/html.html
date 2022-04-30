@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="../images/html-fav/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/html-fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/html-fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/html-fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/html-fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/html-fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/html-fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/html-fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/html-fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/html-fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/html-fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/html-fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/html-fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/html-fav/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>한나의 HTML 연습장입니다</title>
+    <style>
+        @font-face {
+            font-family: "hannah";
+            src: url("../fonts/hannah.otf") format("otf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 90vh;
+            padding-top: 10vh;
+            font-size: 20px;
+            line-height: 130%;
+            background: url(../images/img2.JPG) no-repeat bottom;
+            background-size: cover;
+            bottom: 0;
+        }
+
+        .home {
+            color: aliceblue;
+            font-size: 1.7rem;
+            position: absolute;
+            top: 55px;
+            left: 480px;
+        }
+
+        .resume {
+            color: aliceblue;
+            font-size: 1.8rem;
+            position: absolute;
+            top: 55px;
+            left: 517px;
+        }
+
+        .portfolio {
+            color: aliceblue;
+            font-size: 1.8rem;
+            position: absolute;
+            top: 55px;
+            left: 550px;
+        }
+
+        .css {
+            color: aliceblue;
+            font-size: 2rem;
+            position: absolute;
+            top: 55px;
+            right: 550px;
+        }
+
+        .jsjq {
+            color: aliceblue;
+            font-size: 1.7rem;
+            position: absolute;
+            top: 55px;
+            right: 515px;
+        }
+
+        .pdf {
+            color: aliceblue;
+            font-size: 1.7rem;
+            position: absolute;
+            top: 55px;
+            right: 480px;
+        }
+
+        .smallcloud1 {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 2));
+            filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 2));
+            animation: cloud1 0.6s forwards alternate infinite;
+        }
+
+        @keyframes cloud1 {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: rotate(2deg);
+            }
+
+            100% {
+                transform: scale(1.02);
+            }
+        }
+
+        .smallcloud2 {
+            position: absolute;
+            top: 20%;
+            left: 80%;
+            width: 115px;
+            height: 115px;
+            -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 2));
+            filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 2));
+            animation: cloud2 0.4s forwards alternate infinite;
+        }
+
+        @keyframes cloud2 {
+            0% {
+                transform: rotate(10deg);
+                transform: scale(1);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+
+            100% {
+                transform: scale(1.03);
+            }
+        }
+
+        svg {
+            width: auto;
+            height: 20%;
+        }
+
+        .floating_area {
+            width: 1000px;
+            height: 87vh;
+            margin: 0 auto;
+        }
+
+        .floating {
+            background: rgba(255, 255, 255, 0.52);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(11.4px);
+            -webkit-backdrop-filter: blur(11.4px);
+            border: 1px solid rgba(255, 255, 255, 0.49);
+            padding-bottom: 3rem;
+        }
+
+        h1 {
+            margin: 3rem auto 2rem;
+            font: bold 2em Arial;
+            text-align: center;
+        }
+
+        .list {
+            font-family: "hannah";
+            font-size: 1.2rem;
+            line-height: 20px;
+            width: 71%;
+            margin: 0 auto;
+            letter-spacing: 1px;
+        }
+
+        .list a {
+            display: flex;
+        }
+
+        a:link,
+        a:visited {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #000;
+            font-weight: bold;
+        }
+
+        a:active {
+            font-weight: bold;
+        }
+
+        .camera {
+            font-size: 1.2rem;
+            position: absolute;
+            bottom: 10px;
+            right: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="../index.html" target="_blank"><span class="home"><i class="fa-solid fa-house"></i></span></a>
+    <a href="../pdf/HannahKang_resume.pdf" target="_blank"><span class="resume"><i class="fa-solid fa-file"></i></span></a>
+    <a href="http://ssenna5.dothome.co.kr/" target="_blank"><span class="portfolio"><i
+                class="fa-solid fa-computer-mouse"></i></span></a>
+    <a href="../pageclassification/css.html" target="_blank"><span class="css"><i
+                class="fa-brands fa-css3-alt"></i></span></a>
+    <a href="../pageclassification/jsjq.html" target="_blank"><span class="jsjq"><i
+                class="fa-brands fa-js"></i></span></a>
+    <a href="../pdf/webdesign_trend_casestudy.pdf" target="_blank"><span class="pdf"><i
+                class="fa-solid fa-file-pdf"></i></span></a>
+    <svg class="smallcloud1" viewBox='0 0 100 100'>
+        <path
+            d="m 20 50 a 10 10 1 0 0 0 20 h 50 a 0.5 0.5 0 0 0 0 -25 a 0.5 0.5 0 0 0 -27 -3 a 0.5 0.5 0 0 0 -23 8 m 9 20 c 22 23 34 1 37 0 m 15 0"
+            fill="white" />
+    </svg>
+    <svg class="smallcloud2" viewBox='0 0 100 100'>
+        <path
+            d="m 20 50 a 10 10 1 0 0 0 20 h 50 a 0.5 0.5 0 0 0 0 -25 a 0.5 0.5 0 0 0 -27 -3 a 0.5 0.5 0 0 0 -23 8 m 9 20 c 22 23 34 1 37 0 m 15 0"
+            fill="white" />
+    </svg>
+    <div class="floating_area">
+        <div class="floating">
+            <h1><a href="../index.html">HTML 복습 연습장</a></h1>
+            <div class="list_area">
+                <div class="list">
+                    <a href="../html/html1.html" target="_blank">01/08-링크연결하기(메타요소삽입)</a> <br />
+                    <a href="../html/html2.html" target="_blank">01/11-h와 p, br 등 알아보기</a> <br />
+                    <a href="../html/html3.html" target="_blank">01/12-entity와 abbr 등 알아보기</a> <br />
+                    <a href="../html/html4.html" target="_blank">01/13-ruby,rt,header,section를 이용하여 소설가
+                        김동인의 '감자'에서
+                        발췌한 한구절보기</a> <br />
+                    <a href="../html/html5.html" target="_blank">01/14-ul,ol,li,summary를 이용한 2022년 공휴일 한눈에
+                        보기</a> <br />
+                    <a href="../html/html6.html" target="_blank">01/15-dl,dt,dd를 이용하여 방역용 마스크 알아보기</a> <br />
+                    <a href="../html//html7.html" target="_blank">01/16-video,music 삽입으로 나의 여행 기록하기</a> <br />
+                    <a href="../html/html8.html" target="_blank">01/17-hyperlink 연결하기</a> <br />
+                    <a href="../html/html9.html" target="_blank">01/18-nameanchor를 이용하여 디즈니 공주들 한눈에 보기</a> <br />
+                    <a href="../html/html10.html" target="_blank">01/19-inlineframe 연습하기</a> <br />
+                    <a href="../html/html11.html" target="_blank">01/20-table을 이용하여 2008년 국내 가요 TOP10 한눈에 보기</a> <br />
+                    <a href="../html/html12.html" target="_blank">01/21-회원가입 form 만들기</a> <br />
+                    <a href="../html/html13.html" target="_blank">01/22-Q&A, 문의폼 만들기</a> <br />
+                    <a href="../html/html14.html" target="_blank">01/23-회원정보 제출폼 만들기</a> <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="camera"><i class="fa-solid fa-camera"></i> by Hannah</span>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+	<meta charset="utf-8">
+		<title>Lazy Loading</title>
+		<style>
+			body { font-family: Consolas, sans-serif; }
+			h1 { margin: 30px 0px; text-align: center; }
+			img { max-width: 100%; display: block; margin: 0px 0px 100px 0px; }
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<h1>Lazy Loding</h1>
+		</div>
+		<div class="b">
+
+			<img data-src="https://picsum.photos/200/300?random=1" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=2" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=3" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=4" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=5" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=6" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=7" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=8" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=9" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=10" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=11" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=12" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=13" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=14" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=15" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=16" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=17" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=18" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=19" class="lozad">
+			<img data-src="https://picsum.photos/200/300?random=20" class="lozad">
+		</div>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+		<script>
+			const observer = lozad();
+			observer.observe();
+		</script>
+	</body>
+</html>
