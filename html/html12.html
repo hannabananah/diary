@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1/21 연습장</title>
+</head>
+
+<body>
+    <h1>회원 가입을 환영합니다</h1>
+    <form action="#" method="post">
+        <p>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>
+                    <label>아이디 <input name="ID" type="text" placeholder="4자 ~ 10자 사이, 공백없이"></label>
+                </li>
+                <li>
+                    <label>이메일 <input name="Email" type="text"></label>
+                </li>
+                <li>
+                    <label>비밀번호 <input name="password" type="text" placeholder="문자와 숫자, 특수 기호 포함"></label>
+                </li>
+                <li>
+                    <label>비밀번호 확인 <input name="passwod" type="text"></label>
+                </li>
+            </ul>
+        </fieldset>
+        </p>
+        <p>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label>
+                <input name="accept" type="radio">
+                메일 수신
+            </label>
+            <label>
+                <input name="unaccept" type="radio" checked>
+                메일 수신 안 함
+            </label>
+        </fieldset>
+        </p>
+        <p>
+            <input name="process" type="submit" value="가입하기">
+            <input name="process" type="reset" value="취소">
+        </p>
+    </form>
+</body>
+
+</html>

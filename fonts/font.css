@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'dream';
+    src: url('./SCDream1.ttf');
+    src: url('./SCDream1.eot?#iefix')  format('embedded-opentype'),
+         url('./SCDream1.woff') format('woff'),
+         url('./SCDream1.ttf') format('truetype'),
+         url('./SCDream1.svg') format('svg');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'dream';
+    src: url(./SCDream2.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'dream';
+    src: url(./SCDream3.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'dream';
+    src: url(./SCDream4.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'dream';
+    src: url(./SCDream5.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'dream';
+    src: url(./SCDream6.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'dream';
+    src: url(./SCDream7.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'dream';
+    src: url(./SCDream8.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'dream';
+    src: url(./SCDream9.ttf);
+    font-weight: 900;
+}
+.dream{
+    font-family: 'dream', sans-serif;
+}
+@font-face {
+    font-family: 'Jeongbeom';
+    src: url(./KCC-Jeongbeom.woff);
+    font-weight: 100;
+}
+.Jeongbeom{
+    font-family: 'Jeongbeom', sans-serif;
+}
+@font-face {
+    font-family: 'vitrocore';
+    src: url(./vitro_core.otf);
+}
+.vitrocore{
+    font-family: 'vitrocore', Arial, sans-serif;
+}
+@font-face {
+    font-family: 'vitropride';
+    src: url(./vitro_pride.otf);
+}
+.vitropride{
+    font-family: 'vitropride', Arial, sans-serif;
+}
+@font-face {
+    font-family: 'hannah';
+    src: url(./hannah.otf);
+}
+.hannah{
+    font-family: 'hannah', Arial, sans-serif;
+}
