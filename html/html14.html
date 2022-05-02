@@ -10,7 +10,6 @@
 
 <body>
     <form action="#" method="post">
-        <!--p태그를 사용하면 줄바꿈이 됨-->
         <p>
             작성자<input name="userName" type="text" placeholder="작성자" required="required" />
         </p>
@@ -20,8 +19,6 @@
         <p>
             이메일<input name="userEmail" autocomplete="on" />
         </p>
-        <!--type:tel은 아이폰에서 넘버패드나옴-->
-        <!--autocomplete은 디폴트가 on이라서 autocomplete 속성을 사용하지 않더라도 on 상태-->
         <p>
             전화번호<input name="userPhone" type="tel" autocomplete="off" />
         </p>
@@ -43,7 +40,6 @@
         <p>
             색상<input name="userColor" type="color" />
         </p>
-        <!--창의 오른쪽에 있는 화살표로 수량이나 범위를 조절할 수 있는 것을 '스피너'라고 함-->
         <p>
             수량<input name="userNum" type="number" value="12" />
         </p>
@@ -51,7 +47,6 @@
             타이틀<input name="userTitle" type="text" />
         </p>
         <p>
-            <!--search속성을 사용하면 창안에 한번에 내용을 지울 수 있는 엑스표가 뜸-->
             검색<input name="userSearch" type="search" />
         </p>
         <p>
@@ -68,14 +63,9 @@
                 <label for="serialNum">시리얼번호입력:</label>
                 <input id="serialNum" type="text" />
                 <input type="button" value="이전" />
-<!--disabled는 서버에 전송되지 않음-->
-<!--label의 for는 input의 id와 사상시킨다.
-input id 디자인용 이름
-input name은 백엔드쪽 이름-->
                 <input type="button" value="다음" disabled="disabled" />
             </li>
             <li>
-<!--readonly:읽기전용으로 사용자가 값을 수정할 수 없고 기본값을 서버에 전송해야 할 때-->
                 <label for="book">선택한 책:</label>
                 <input id="book" type="text" value="반응형웹" readonly="readonly" />
                 <label for="number">수량:</label>
